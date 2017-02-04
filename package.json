@@ -15,6 +15,7 @@
     "whatwg-fullscreen-api",
     "fallback",
     "fullscreen-fallback",
+    "fullscreen-api-fallback",
     "jsfullscreen",
     "whatwg",
     "whatwg.org",

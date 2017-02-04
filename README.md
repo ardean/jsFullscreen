@@ -5,6 +5,8 @@
 
 **WHATWG Fullscreen API Fallback**
 
+[Demo](https://ardean.github.io/jsFullscreen/)
+
 ## Specification
 [Fullscreen API, WHATWG](https://fullscreen.spec.whatwg.org/)
 
