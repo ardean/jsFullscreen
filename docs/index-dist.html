@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>jsFullscreen using dist-file</title>
+  <meta charset="utf-8">
+  <style media="screen">
+    html,
+    body {
+      background-color: #CCCCCC;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      transition: background-color 2s;
+    }
+
+    body.active {
+      background-color: #CCFFCC;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/EventEmitter/5.1.0/EventEmitter.min.js" charset="utf-8"></script>
+  <script src="jsfullscreen.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    var fullscreen = new jsFullscreen
+      .Fullscreen(document.body)
+      .on("change", function (isActive) {
+        console.info("Fullscreen active: " + isActive);
+        fullscreen.$element.toggleClass("active");
+      });
+
+    fullscreen.$element.on("click", function () {
+      fullscreen.requestFullscreen();
+    });
+  </script>
+</body>
+
+</html>
