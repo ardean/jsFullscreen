@@ -1,4 +1,6 @@
 # jsFullscreen
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/ardean/jsFullscreen.svg)](https://greenkeeper.io/)
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
 [![License][license-image]][license-url]
